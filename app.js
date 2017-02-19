@@ -1,3 +1,15 @@
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', function() {
+	    navigator.serviceWorker.register('service-worker.js')
+	    	.then(function(registration) {
+		      	// success
+		      	console.log('ServiceWorker Registered', registration);
+	    	}).catch(function(error) {
+		      	// failed
+		      	console.log('ServiceWorker Registration failed:', error);
+	    	});
+	});
+}
 function getImage(){
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
