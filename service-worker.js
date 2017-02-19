@@ -23,4 +23,24 @@ this.addEventListener('activate', function(event){
 })
 this.addEventListener('fetch', function(event){
 	console.log("Service Worker fetch event");
+	event.respondWith(
+    	caches.match(event.request)
+	    	.then(function(response) {
+	    		if (response){
+	    			console.log("fetching from cache");
+	    			return response;
+	    		}else{
+	    			fetch(event.request).then(function(response) {
+			        	caches.open('newCacheName').then(function(cache) {
+			        		cache.put(event.request, response.clone());
+			        	});
+			        	console.log("fetched from API, cloned and cache updated");
+	        			return response;
+	      			});
+	    		}
+	    	})
+	    	.catch(function(error) {
+	    	  	console.log("error fetching", error);
+	    	})
+  	);
 })
