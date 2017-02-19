@@ -1,12 +1,9 @@
-var cacheName = 'cacheName';
-var cacheFiles = ['index.html','app.js'];
-
 this.addEventListener('install', function(event){
 	console.log("Service Worker install event");
 	event.waitUntil(
-		caches.open(cacheName).then(function(cache){
+		caches.open('cacheName').then(function(cache){
 			console.log("Adding files to cache memory");
-			return cache.addAll(cacheFiles);
+			return cache.addAll(['index.html','app.js']);
 		})
 	)
 })
