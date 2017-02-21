@@ -16,9 +16,9 @@ Application for demonstration of Service Worker
 
 **Read More** about it in the [Blogpost](http://blog.kozzaja.com/2017/02/20/getting-started-service-worker/)
 
-**Get in touch** with me in:
+**Get in touch** :
 
-Email me at :  `aayushbhandari@yahoo.com`, `aayushbhandari1993@gmail.com`
+Email: `aayushbhandari1993@gmail.com`
 
 [website](http://ayushbhandari.com.np/)
 [facebook](https://www.facebook.com/jhilkhe.khancha)
