@@ -14,7 +14,7 @@ Application for demonstration of Service Worker
 
 * From terminal run `npm run dev` to view in the browser
 
-**Read More** about it in the [Blogpost](http://blog.kozzaja.com/2017/02/20/getting-started-service-worker/)
+**Read More** about it in the [Blogpost](http://blog.kozzaja.com/2017/02/23/service-worker/)
 
 **Get in touch** :
 
